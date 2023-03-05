@@ -19,8 +19,7 @@
 
 [node name="Blocks" type="Node2D"]
 script = ExtResource("1_wip17")
-mode = "Automatic Complex"
-lines_mode = "Complex Lines"
+mode = "Automatic Simple"
 destroy_to_click = true
 alone_ = ExtResource("2_4o6uv")
 alone__ = ExtResource("2_4o6uv")

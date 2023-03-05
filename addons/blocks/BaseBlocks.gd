@@ -91,8 +91,6 @@ func _process(delta):
 					self.queue_free()
 	
 	match lines_mode :
-		"Desactivado" :
-			return
 		"Complex Lines" :
 			_complex_lines()
 		"Simple Lines" :
@@ -100,8 +98,6 @@ func _process(delta):
 			
 
 	match  mode :
-		"Simple":
-			return
 		"Automatic Complex":
 			_automatic_complex()
 		"Automatic Simple":
