@@ -1,0 +1,44 @@
+[gd_scene load_steps=17 format=3 uid="uid://bqleksbko20w5"]
+
+[ext_resource type="Script" path="res://addons/blocks/BaseBlocks.gd" id="1_wip17"]
+[ext_resource type="Texture2D" uid="uid://ukblwluu1k0e" path="res://Textures/alone.png" id="2_4o6uv"]
+[ext_resource type="Texture2D" uid="uid://c0lnq4doeofmw" path="res://Textures/center.png" id="3_374ym"]
+[ext_resource type="Texture2D" uid="uid://dsdemvxk1rlh6" path="res://Textures/3.png" id="4_t7mr7"]
+[ext_resource type="Texture2D" uid="uid://bmvqu2xe4acyn" path="res://Textures/1.png" id="5_cb67p"]
+[ext_resource type="Texture2D" uid="uid://dycwhsi2wpbaf" path="res://Textures/10.png" id="13_erbh8"]
+[ext_resource type="Texture2D" uid="uid://ylyibgf7fnos" path="res://Textures/11.png" id="14_14eka"]
+[ext_resource type="Texture2D" uid="uid://coil0fo8b2yqj" path="res://Textures/4.png" id="14_47ale"]
+[ext_resource type="Texture2D" uid="uid://bpfgk7f24gqp5" path="res://Textures/13.png" id="15_f8rt8"]
+[ext_resource type="Texture2D" uid="uid://bk147tgpbg206" path="res://Textures/6.png" id="15_wvijb"]
+[ext_resource type="Texture2D" uid="uid://olu61vulxnsh" path="res://Textures/14.png" id="16_d0xsf"]
+[ext_resource type="Texture2D" uid="uid://bgm5w75roa6av" path="res://Textures/5.png" id="16_q2emo"]
+[ext_resource type="Texture2D" uid="uid://dyexyo1lcco58" path="res://Textures/12.png" id="17_lc0u6"]
+[ext_resource type="Texture2D" uid="uid://dj0iq5hlm6kq8" path="res://Textures/7.png" id="18_bnwsh"]
+[ext_resource type="Texture2D" uid="uid://b2cu33ki350h4" path="res://Textures/8.png" id="19_1sn3k"]
+[ext_resource type="Texture2D" uid="uid://c3pf7yjiqjwlh" path="res://Textures/9.png" id="20_tarla"]
+
+[node name="Blocks" type="Node2D"]
+script = ExtResource("1_wip17")
+mode = "Automatic Complex"
+lines_mode = "Complex Lines"
+destroy_to_click = true
+alone_ = ExtResource("2_4o6uv")
+alone__ = ExtResource("2_4o6uv")
+center_ = ExtResource("3_374ym")
+corner_ = ExtResource("4_t7mr7")
+edge_ = ExtResource("5_cb67p")
+alone___ = ExtResource("2_4o6uv")
+center__ = ExtResource("3_374ym")
+corner_1 = ExtResource("14_47ale")
+corner_2 = ExtResource("4_t7mr7")
+corner_3 = ExtResource("15_wvijb")
+corner_4 = ExtResource("16_q2emo")
+edge_1 = ExtResource("5_cb67p")
+edge_2 = ExtResource("18_bnwsh")
+edge_3 = ExtResource("19_1sn3k")
+edge_4 = ExtResource("20_tarla")
+corner__ = ExtResource("13_erbh8")
+center___ = ExtResource("14_14eka")
+corner__1 = ExtResource("15_f8rt8")
+center____ = ExtResource("16_d0xsf")
+corner__2 = ExtResource("17_lc0u6")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1xwkcsh35csr"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_q51rx"]
+[ext_resource type="Texture2D" uid="uid://xb0m5uw81pho" path="res://celda.png" id="2_1ya5s"]
+[ext_resource type="PackedScene" uid="uid://bqleksbko20w5" path="res://Grass.tscn" id="2_xnf2b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3c5ge"]
+size = Vector2(1, 1)
+
+[node name="Test" type="Node2D"]
+script = ExtResource("1_q51rx")
+BLOCK = ExtResource("2_xnf2b")
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_1ya5s")
+
+[node name="Area2D" type="Area2D" parent="Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Area2D"]
+shape = SubResource("RectangleShape2D_3c5ge")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[connection signal="body_entered" from="Sprite/Area2D" to="." method="_block_entered"]
+[connection signal="body_exited" from="Sprite/Area2D" to="." method="_block_exited"]
